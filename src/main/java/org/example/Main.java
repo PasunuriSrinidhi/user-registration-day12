@@ -33,6 +33,15 @@ public class Main {
             System.out.print("\nEnter email: ");
             email = sc.nextLine();
         }
+// Uc4: validating phone number
+        String phoneRegex = "^[0-9]{1,4} [0-9]{5,15}$";
+        System.out.print("\nEnter phone number: ");
+        String phone = sc.nextLine();
+        while (!phone.matches(phoneRegex)) {
+            System.out.println("Please enter a valid response.");
+            System.out.print("\nEnter phone number: ");
+            phone = sc.nextLine();
+        }
 
         sc.close();
     }
