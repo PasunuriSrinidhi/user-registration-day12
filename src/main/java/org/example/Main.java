@@ -15,6 +15,15 @@ public class Main {
             System.out.print("Enter Firstname: ");
             firstName = sc.nextLine();
         }
+ // UC2: validating lastname
+        String lastNameRegex = "^[A-Z][a-zA-Z]{2,}$";
+        System.out.print("\nEnter last name: ");
+        String lastName = sc.nextLine();
+        while (!lastName.matches(lastNameRegex)) {
+            System.out.println("Please enter a valid response.");
+            System.out.print("Enter last name: ");
+            lastName = sc.nextLine();
+        }
 
         sc.close();
     }
