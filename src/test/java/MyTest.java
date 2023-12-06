@@ -29,7 +29,7 @@ public class MyTest {
     
     // UC10: testing all other fields
     @ParameterizedTest
-    @ValueSource(strings = { "Chinmay", "chinmay", "ab", "aB", "abc", "Abc" })
+    @ValueSource(strings = { "Srinidhi", "srinidhi", "ab", "aB", "abc", "Abc" })
     public void testNames(String name) {
         String nameRegex = "^[A-Z][a-zA-Z]{2,}$";
         Pattern pattern = Pattern.compile(nameRegex);
