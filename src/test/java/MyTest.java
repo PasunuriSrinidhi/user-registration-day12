@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 public class MyTest {
 
-    // UC9: testing with all sample strings
+    // UC11: testing with all given email ids
     @ParameterizedTest
     @ValueSource(strings = {
             "abc@yahoo.com",
@@ -40,9 +40,9 @@ public class MyTest {
     
 }
     
-    // UC10: testing all other fields
+   
     @ParameterizedTest
-    @ValueSource(strings = { "Chinmay", "chinmay", "ab", "aB", "abc", "Abc" })
+    @ValueSource(strings = { "Srinidhi", "srinidhi", "ab", "aB", "abc", "Abc" })
     public void testNames(String name) {
         String nameRegex = "^[A-Z][a-zA-Z]{2,}$";
         Pattern pattern = Pattern.compile(nameRegex);
